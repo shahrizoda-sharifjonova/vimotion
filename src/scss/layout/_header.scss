@@ -7,8 +7,21 @@
             padding-top: 115px;
             padding-bottom: 85px;
         }
+        @include media(992){
+            padding-top: 50px;
+            padding-bottom: 64px;
+        }
+        @include media(768){
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
         &-brand{
-            width: 210px;
+            @include media(1200){
+                width: 210px;
+            }
+            @include media(768){
+                width: 111px;
+            }
             img{
                 width: 100%;
                 object-fit: cover;
@@ -23,10 +36,26 @@
             margin-right: 0 !important;
             display: flex;
             align-items: center;
+            @include media(992){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    .navbar-toggler{
+        &:focus{
+            box-shadow: none;
         }
     }
     .nav-item{
         margin-right: 22px;
+        @include media(1200){
+            margin-right: 40px;
+        }
+        @include media(992){
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
     }
     .nav-link{
         font-weight: 400;
@@ -34,8 +63,31 @@
         line-height: 19px;
         color: #494949 !important;
         padding: 0 !important; 
+        @include media(1200){
+            font-size: 32px;
+            line-height: 38px;
+        }
+        @include media(992){
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @include media(768){
+            font-size: 16px;
+            line-height: 19px;
+        }
         &.active{
-            color: #494949 !important   ;
+            color: #494949 !important  ;
+        }
+    }
+    &__img{
+        @include media(1200){
+            width: 120px;
+        }
+        @include media(768){
+            width: 61px;
+        }
+        img{
+            width: 100%;
         }
     }
 }
