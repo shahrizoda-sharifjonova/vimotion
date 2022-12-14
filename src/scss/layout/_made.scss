@@ -7,6 +7,12 @@
     @include media(992){
         padding-bottom: 40px;
     }
+    &__wrapper{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     &__top{
         display: flex;
         justify-content: space-between;

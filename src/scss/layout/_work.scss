@@ -1,0 +1,114 @@
+.work{
+    padding-top: 35px;
+    &__title{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #494949;
+        text-align: center;
+        margin-bottom: 18px;
+        @include media(768){
+            font-size: 26px;
+            line-height: 30px;
+        }
+        @include media(575){
+            font-size: 21px;
+            line-height: 25px;
+            margin-bottom: 12px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #494949;
+        max-width: 607px;
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left:auto;
+        margin-right: auto;
+        @include media(1200){
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 54px;
+            max-width: 100%;
+        }
+        @include media(992){
+            font-size: 23px;
+            line-height: 32px;
+            margin-bottom: 32px;
+        }
+        @include media(768){
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @include media(575){
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &.tal{
+            text-align: left;
+            max-width: 825px;
+            width: 100%;
+            margin-left: 0;
+            @include media(1200){
+                max-width: 100%;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        @include media(1200){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        width: 50%;
+        height: 500px;
+        @include media(1400){
+            height: 430px;
+        }
+        @include media(1200){
+            width: 100%;
+            height: 675px;
+        }
+        @include media(992){
+            height: 510px;
+        }
+        @include media(768){
+            height: 430px;
+        }
+        @include media(575){
+            height: 335px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &:not(:last-of-type){
+            @include media(1200){
+                margin-bottom: 18px;
+            }
+            @include media(575){
+                margin-bottom: 12px;
+            }
+        }
+    }
+    &__p{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #494949;
+        margin-bottom: 40px;
+        @include media(1200){
+            margin-top: 18px;
+        }
+        @include media(768){
+            margin-bottom: 25px;
+        }
+    }
+}
