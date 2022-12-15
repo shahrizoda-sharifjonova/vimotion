@@ -25,3 +25,23 @@ madeBtn.forEach(btn=>{
         })
     })
 })
+
+const introButtons = document.querySelectorAll('.intro__a');
+const introContainer = document.querySelector('.intro__list');
+const introContent = document.querySelector('.intro__content');
+introButtons.forEach(el => {
+    el.addEventListener('click', () => {
+        introButtons.forEach(el => {
+            el.classList.remove('active')
+        })
+        el.classList.add('active')
+        const containerLeft = introContainer.getBoundingClientRect().left
+        const elLeft = el.getBoundingClientRect().left
+        let contentex1 = introContent.style.transform
+        let contentex2 = contentex1.replace('translateX(', '')
+        let contentX = contentex2.replace('px)', '')
+        const contentLeft = introContent.getBoundingClientRect().left
+        let distance = (elLeft - containerLeft) - contentX
+        introContent.style.transform = `translateX(-${distance}px)`
+    })
+})

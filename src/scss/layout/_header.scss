@@ -15,6 +15,12 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
+        &.navbar-dark{
+            background: #494949 !important;
+            .nav-link{
+                color: #E5E4D9 !important;   
+            }
+        }
         &-brand{
             @include media(1200){
                 width: 210px;
