@@ -25,6 +25,24 @@ madeBtn.forEach(btn=>{
         })
     })
 })
+const projectsWrapper = document.querySelectorAll('.projects__wrapper');
+
+madeBtn.forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+        projectsWrapper.forEach(pwrapper=>{
+            pwrapper.classList.remove('active')
+        })
+        madeBtn.forEach(button=>{
+            button.classList.remove('active')
+        })
+        const target = btn.getAttribute("data-target")
+        btn.classList.add('active')
+        projectsWrapper.forEach(prrapper=>{
+            const answer = document.querySelector(`#${target}`)
+            answer.classList.add('active')
+        })
+    })
+})
 
 const introButtons = document.querySelectorAll('.intro__a');
 const introContainer = document.querySelector('.intro__list');
