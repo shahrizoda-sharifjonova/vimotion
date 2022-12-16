@@ -1,0 +1,43 @@
+mixin activity()
+    .activity 
+        .activity__body.container 
+            h2.activity__title Field of activity
+            form(action="").activity__form
+                .activity__inputs 
+                    .activity__input.first 
+                        p.activity__name Name
+                        input(type="text" required) 
+                    .activity__input 
+                        p.activity__name Last name
+                        input(type="text" required)
+                .activity__input 
+                    p.activity__name E-mail
+                    input(type="text" required)
+                .activity__input 
+                    p.activity__name Phone number
+                    input(type="text" required)
+                .activity__input 
+                    p.activity__name Company name
+                    input(type="text" required)
+                .activity__input 
+                    p.activity__name What’s your question?
+                    select.activity__select(name="select")
+                        option(value="0").activity__option 
+                        option(value="0").activity__option Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, est! 
+                        option(value="0").activity__option Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, est! 
+                        option(value="0").activity__option Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, est! 
+                        option(value="0").activity__option Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, est! 
+                .activity__input.last 
+                    p.activity__name Tell us more
+                    textarea(name="textarea").activity__textarea
+                p.activity__p Drop in any relevant files here
+                <label for="file-upload" class="custom-file-upload">Select files</label>
+                    <input id="file-upload" class="activity__input-file" type="file"/>
+                p.activity__desc Information you submit here will be used as detailed in our privacy policy so we can get back to you. From time to time, we would like to contact you about news, insights and exclusive event invitations by email. If you would like to opt-in to receive these marketing emails please tick the relevant boxes below. You will be able to opt-out at any time using the links provided in our emails or by contacting us as detailed in our privacy policy.
+                .activity__checkbox.first 
+                    input(type="checkbox" id="checkbox1") 
+                    label(for="checkbox1").activity__label I agree to receive a monthly creative community newsletter (Vimotion Production)
+                .activity__checkbox 
+                    input(type="checkbox" id="checkbox2") 
+                    label(for="checkbox2").activity__label I want to be invited to The Mill’s Virtual Events & receive other marketing comms from Vimotion Production
+                button(type="submit").activity__button Submit

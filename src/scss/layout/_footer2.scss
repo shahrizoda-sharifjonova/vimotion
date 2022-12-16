@@ -1,48 +1,13 @@
-.footer{
-    background: #58A3AF;
+.footer2{
+    background: #E5E4D9;
     padding-top: 52px;
-    padding-bottom: 45px;
+    padding-bottom: 65px;
     @include media(1200){
-        padding-top: 85px;
+        padding-top: 50px;
         padding-bottom: 80px;
     }
     @include media(992){
-        padding-top: 60px;
         padding-bottom: 50px;
-    }
-    &__top{
-        border-bottom: 1px solid #E5E5E5;
-        padding-bottom: 62px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        isolation: isolate;
-        @include media(768){
-            padding-bottom: 30px;   
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            width: 845px;
-            height: 350px;
-            background: url(../img/footer-before.svg) center / cover no-repeat;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            @include media(1200){
-                width: 100%;
-                height: 505px;
-            }
-            @include media(992){
-                height: 350px;
-            }
-            @include media(768){
-                height: 250px;
-            }
-        }
     }
     &__img{
         margin-bottom: 45px;
@@ -65,55 +30,12 @@
             width: 100%;
         }
     }
-    &__title{
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
-        text-align: center;
-        color: #E5E4D9;
-        max-width: 295px;
-        width: 100%;
-        @include media(1200){
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 56px;
-            max-width: 670px;
-        }
-        @include media(992){
-            font-size: 38px;
-            line-height: 48px;
-        }
-        @include media(768){
-            font-size: 32px;
-            line-height: 42px;
-        }
-        @include media(575){
-            font-size: 27px;
-            line-height: 35px;
-        }
-        img{
-            margin-right: 10px;
-            @include media(1200){
-                width: 65px;
-                margin-right: 15px;
-            }
-            @include media(992){
-                width: 50px;
-            }
-            @include media(768){
-                width: 35px;
-            }
-        }
-    }
     &__content{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 28px;
-        @include media(1200){
-            padding-bottom: 10px;
-            border-bottom: 1px solid #E5E5E5;
-        }
+        padding-bottom: 28px;
+        border-bottom: 1px solid #494949;
         @include media(575){
             flex-direction: column;
         }
@@ -174,7 +96,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        color: #E5E4D9;
+        color: #494949;
         list-style: none;
         margin-bottom: 12px;
         @include media(1200){
@@ -194,7 +116,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        color: #E5E4D9;
+        color: #494949;
         list-style: none;
         @include media(1200){
             font-size: 24px;
@@ -209,11 +131,11 @@
             line-height: 16px;
         }
         &:hover{
-            color: #E5E4D9;
+            color: #494949;
         }
         &.mail{
             padding: 5px 6px;
-            border: 1px solid #E5E4D9 !important;
+            border: 1px solid #494949 !important;
             border-radius: 14px;
             @include media(1200){
                 font-weight: 300;
